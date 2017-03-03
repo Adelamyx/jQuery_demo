@@ -9,11 +9,11 @@
 <body>
 	<div id="div1" class="div2">div1</div>
 	<ul>
-		<li title="hellow"></li>
-		<li class="ad"></li>
-		<li></li>
-		<li class="ad"></li>
-		<li></li>
+		<li title="hellow">1</li>
+		<li class="ad">2</li>
+		<li>3</li>
+		<li class="ad">4</li>
+		<li>5</li>
 	</ul>
 
 	<script>
@@ -23,6 +23,11 @@
 		$('li').filter('.ad').css('backgroundColor','blue');
 		//筛选
 		$('li').filter('[title=hellow]').css('backgroundColor','yellow');
+		$('#div1').html(1243);
+		$('#div1').click(function () {
+			//alert($('#div1').html());
+			alert($(this).html());
+		})
 	</script>
 </body>
 </html>
