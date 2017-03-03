@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>20170303jQuery</title>
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+
+</head>
+<body>
+	<div id="div1" class="div2">div1</div>
+	<ul>
+		<li title="hellow"></li>
+		<li class="ad"></li>
+		<li></li>
+		<li class="ad"></li>
+		<li></li>
+	</ul>
+
+	<script>
+		$('#div1').css('background','red');
+		$('li:eq(2)').css('backgroundColor','black');
+		$('li:odd').css('backgroundColor','pink');//奇数
+		$('li').filter('.ad').css('backgroundColor','blue');
+		//筛选
+		$('li').filter('[title=hellow]').css('backgroundColor','yellow');
+	</script>
+</body>
+</html>
