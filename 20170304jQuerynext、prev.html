@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>20170304jQuerynext、prev、find、eq、index</title>
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>	
+	<script>
+		window.onload=function () {
+			$('span').next().css('backgroundColor','pink');
+			$('span').prev().css({'fontSize':'30px','backgroundColor':'#ccc'});//jQuery设置多个css
+
+			$('#div1').find('h2').eq(0).css({"fontsize":"30px","backgroundColor":"pink"});
+		}
+	</script>
+</head>
+<body>
+	<div>div</div>
+	<span>span</span>
+	<p>p</p>
+	<div id="div1">
+		<h2>h2</h2>
+		<h3>h3</h3>
+		<h2>h2</h2>
+		<h3>h3</h3>
+		<h2>h2</h2>
+	</div>
+</body>
+</html>

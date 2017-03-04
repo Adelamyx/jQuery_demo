@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>取值赋值attr、filter、not、has</title>
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+
+	<script>
+		window.onload=function(){
+			// alert(123);
+			// $('#div1').html('你好你叫神马');
+			// $('div').html('你好呀');//赋值
+			// alert($('div').html());//取值
+			$('#div1').attr('title','2334555');
+			$('div').filter('.div2').css('backgroundColor','pink');
+			$('div').not('.div2').css('backgroundColor','#ccc');
+			$('div').has('span').css('backgroundColor','yellow');
+		}
+		
+	</script>
+</head>
+<body>
+	<div id="div1" title="123">你好jQuery</div>
+	<div id="div2" title="213132" class="div2">div2</div>
+	<div id="div3">div3</div>
+	<div id="div4"><span>div4里有个span——用has来找</span></div>
+	<div id="div5">div5</div>
+
+</body>
+</html>
